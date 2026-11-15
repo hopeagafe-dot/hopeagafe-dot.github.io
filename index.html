@@ -1,2 +1,87 @@
-<h1>안녕하세요! MCE의 홈페이지입니다.</h1>
-<p>제 첫 번째 웹사이트에 오신 것을 환영합니다.</p>
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCE Solution — 바다 위의 현장을, 데이터로 잇습니다</title>
+<meta name="description" content="현장 엔지니어가 직접 만들고, 현장에서 검증한 선박 관리 솔루션. MCE Solution.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MCE Solution">
+<meta property="og:description" content="바다 위의 현장을, 데이터로 잇습니다.">
+<meta property="og:image" content="https://hopeagafe-dot.github.io/assets/mce-emblem.png">
+<meta name="theme-color" content="#07182F">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07182F;--ink:#EAF0F8;--sub:#B8C7DC;--mute:#8EA3C0;--line:#2A4467;--accent:#4FC3F7}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:'Noto Sans KR',system-ui,-apple-system,'Malgun Gothic',sans-serif;line-height:1.6;-webkit-text-size-adjust:100%}
+.page{position:relative;min-height:100vh;min-height:100dvh;overflow:hidden;max-width:1440px;margin:0 auto;padding:40px clamp(20px,6vw,96px) 40px;display:flex;flex-direction:column;gap:clamp(32px,6vh,64px)}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;position:relative}
+.brand{display:flex;align-items:center;gap:18px}
+.brand img{height:56px;width:auto;display:block}
+.brand i{width:1px;height:32px;background:var(--line)}
+.brand span{font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:1.4rem;letter-spacing:.04em}
+.tag{font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:.85rem;letter-spacing:.22em;color:#9FB4CF}
+.hero{position:relative;display:flex;align-items:center;gap:clamp(16px,4vw,56px);flex-wrap:wrap}
+.copy{flex:1 1 520px;min-width:0;display:flex;flex-direction:column;gap:24px}
+.kicker{font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:1.05rem;letter-spacing:.04em;color:var(--accent)}
+h1{margin:0;font-weight:800;font-size:clamp(2.1rem,6.2vw,5.5rem);line-height:1.18;letter-spacing:-.02em;word-break:keep-all}
+.lead{margin:0;font-size:clamp(1rem,1.7vw,1.5rem);line-height:1.65;color:var(--sub);max-width:46ch;word-break:keep-all}
+.emblem{position:relative;flex:0 1 420px;display:grid;place-items:center;min-height:300px;margin:0 auto}
+.emblem svg{position:absolute;width:min(900px,170%);aspect-ratio:1;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none}
+.emblem img{position:relative;height:clamp(240px,34vw,400px);width:auto;display:block}
+.pillars{position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:clamp(24px,4vw,56px);border-top:1px solid var(--line);padding-top:28px}
+.pillars article{display:flex;flex-direction:column;gap:8px}
+.pillars b{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;color:var(--accent)}
+.pillars h2{margin:0;font-weight:700;font-size:clamp(1.3rem,2vw,1.75rem)}
+.pillars p{margin:0;color:#AFC0D6;font-size:1.05rem;word-break:keep-all}
+footer{position:relative;margin-top:auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;color:var(--mute);font-size:.95rem}
+footer .en{font-family:'Space Grotesk',sans-serif;font-weight:500;letter-spacing:.06em}
+@media (max-width:640px){.brand img{height:44px}.tag{display:none}.emblem{min-height:260px}}
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="brand">
+      <img src="assets/mce-mark-white.svg" alt="MCE">
+      <i></i>
+      <span>Solution</span>
+    </div>
+    <div class="tag">VISION</div>
+  </header>
+
+  <section class="hero">
+    <div class="copy">
+      <div class="kicker">Built at sea. Built for the sea.</div>
+      <h1>바다 위의 현장을,<br>데이터로 잇습니다.</h1>
+      <p class="lead">현장 엔지니어가 직접 만들고, 현장에서 검증한 선박 관리 솔루션. 선박 운영의 새로운 기준을 현장에서부터 다시 씁니다.</p>
+    </div>
+    <div class="emblem">
+      <svg aria-hidden="true" viewBox="0 0 900 900" fill="none">
+        <circle cx="450" cy="450" r="170" stroke="#4FC3F7" stroke-opacity=".34" stroke-width="1.5"/>
+        <circle cx="450" cy="450" r="270" stroke="#4FC3F7" stroke-opacity=".22" stroke-width="1.5"/>
+        <circle cx="450" cy="450" r="370" stroke="#4FC3F7" stroke-opacity=".13" stroke-width="1.5"/>
+        <circle cx="450" cy="450" r="450" stroke="#4FC3F7" stroke-opacity=".07" stroke-width="1.5"/>
+      </svg>
+      <img src="assets/mce-emblem.png" alt="MCE 엠블럼">
+    </div>
+  </section>
+
+  <section class="pillars" aria-label="핵심 가치">
+    <article><b>01</b><h2>현장에서 검증된 설계</h2><p>LNG선 Chief Engineer의 실무 경험을 프로그램에 담습니다.</p></article>
+    <article><b>02</b><h2>업무의 자동화</h2><p>반복 업무는 자동으로, 엔지니어는 본질적인 일에 집중합니다.</p></article>
+    <article><b>03</b><h2>지식의 전수</h2><p>정비·교육 영상으로 현장의 노하우를 다음 세대에 전합니다.</p></article>
+  </section>
+
+  <footer>
+    <div class="en">MCE Solution · Maritime Engineering, Connected.</div>
+    <div>선박 관리 프로그램 · 업무 자동화 · 정비 교육 콘텐츠</div>
+  </footer>
+</div>
+</body>
+</html>
